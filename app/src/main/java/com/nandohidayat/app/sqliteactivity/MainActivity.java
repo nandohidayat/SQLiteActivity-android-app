@@ -22,6 +22,7 @@ public class MainActivity extends ListActivity {
 //        setContentView(R.layout.activity_main);
         DatabaseHandler db = new DatabaseHandler(this);
         // Tambah Siswa
+        db.addSiswa(new Siswa("001", "Ghiyatsi Miftahur Rahmat"));
         // Membaca Semua Siswa
         List<Siswa> siswa = db.getSemuaSiswa();
         dataSiswa = new String[siswa.size()];
